@@ -6,7 +6,9 @@ See writeup at https://zerosum0x0.blogspot.com/2020/08/sassykitdi-kernel-mode-tc
 
 You can view the generated shellcode in assembly.txt
 
-Most of the code of interest is in the src/common/ntmem (LSASS dump) and src/common/nttdi (TCP sockets) libraries. The shellcode project is in src/payloads/sassykitdi.
+Most of the code of interest is in the src/common/ntmem (LSASS dump) and src/common/nttdi (TCP sockets) libraries. All structs, types, function signatures, etc are in src/common/ntdef. The shellcode project is in src/payloads/sassykitdi.
+
+Tested on Windows 10.0.18362.1016. Might require some tweaking for other versions but all APIs used are available since Win2k.
 
 ## Build/Run
 
