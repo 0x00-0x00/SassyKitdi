@@ -14,9 +14,9 @@ Tested on Windows 10.0.18362.1016. Might require some tweaking for other version
 
 Install gcc-mingw-w64 and Rustup with x86_64-windows-pc-gnu target.
 
-In src/payloads/sassykitdi there is build.sh and pyit.sh to build the project and scrape the shellcode out of the DLL.
+In src/payloads/sassykitdi there is build.sh and pyit.sh to build the project and scrape the shellcode out of the DLL. The big endian reverse address/port should be changed in the source.
 
-There is also src/socketdump.py which will wait to receive SassyKitdi connections and create a minidump file.
+There is also src/socketdump.py server which will wait to receive SassyKitdi connections and create a minidump file.
 
 ## Exploit Preambles
 
